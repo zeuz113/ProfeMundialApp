@@ -26,6 +26,9 @@ alert(states[networkState]);
           navigator.app.loadUrl(direccion);
       }
     }
+    function redir2(){
+        window.location.href = direccion;
+    }
 
     </script>
     <style type="text/css">
@@ -46,6 +49,7 @@ alert(states[networkState]);
 
     <br><br>
     <a href="#" onclick="redir()">Cargar</a>
+    <a href="#" onclick="redir2()">Cargar normalito</a>
 
 
   </body>
