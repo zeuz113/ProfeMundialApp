@@ -76,7 +76,7 @@ zeuz
 
 
 <gap:plugin name="Device" value="org.apache.cordova.core.Device"/>
-<gap:plugin name="NetworkStatus" value="org.apache.cordova.core.NetworkManager" />
+
 	 <access origin="http://127.0.0.1*"/>
 	 <access origin="http://ariadnaproject.com" />
 	
