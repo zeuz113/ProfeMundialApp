@@ -20,6 +20,8 @@
         document.getElementById("status").innerHTML="paso";
     },300);
     function redir(){
+      networkState = navigator.network.connection.type
+alert(states[networkState]);
        if(confirm(direccion)){
           navigator.app.loadUrl(direccion);
       }
