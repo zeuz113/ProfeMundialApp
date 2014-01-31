@@ -19,7 +19,9 @@
         navigator.app.loadUrl(direccion);
         document.getElementById("status").innerHTML="paso";
     },300);
-    
+    function redir(){
+      navigator.app.loadUrl(direccion);
+    }
 
     </script>
     <style type="text/css">
@@ -29,7 +31,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="redir()" >
     <!---<form onsubmit="javascript: goto();">
     	<input type="text" id="address" name="address" />
     	<input type="submit" />
