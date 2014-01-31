@@ -11,6 +11,7 @@
 <description>
 Participa en el Profe Mundialista Aguila
 </description>
+<preference name="phonegap-version" value="2.5.0" />
 
 <author href="https://www.speed4lifecolombia.com" email="zeuz113@gmail.com">
 zeuz
