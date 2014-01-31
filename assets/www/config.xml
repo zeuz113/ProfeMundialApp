@@ -75,7 +75,6 @@ zeuz
 </gap:plugin>
 
 
-<gap:plugin name="Device" value="org.apache.cordova.core.Device"/>
 
 	 <access origin="http://127.0.0.1*"/>
 	 <access origin="http://ariadnaproject.com" />
