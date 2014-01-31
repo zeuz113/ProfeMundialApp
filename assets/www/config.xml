@@ -49,10 +49,10 @@ zeuz
 	 <preference name="load-url-timeout" value="50000" />
 
     <icon src="ic_launcher.png" />
-    <icon src="res/drawable-ldpi/ic_launcher.png"   gap:platform="android"    gap:density="ldpi" />
-    <icon src="res/drawable-mdpi/ic_launcher.png"   gap:platform="android"    gap:density="mdpi" />
-    <icon src="res/drawable-hdpi/ic_launcher.png"   gap:platform="android"    gap:density="hdpi" />
-    <icon src="res/drawable-xhdpi/ic_launcher.png"   gap:platform="android"    gap:density="xhdpi" />
+    <icon src="images/drawable-ldpi/ic_launcher.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="images/drawable-mdpi/ic_launcher.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="images/drawable-hdpi/ic_launcher.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="images/drawable-xhdpi/ic_launcher.png"   gap:platform="android"    gap:density="xhdpi" />
 	
 	<gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
