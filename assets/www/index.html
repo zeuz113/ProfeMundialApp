@@ -20,7 +20,9 @@
         document.getElementById("status").innerHTML="paso";
     },300);
     function redir(){
-      navigator.app.loadUrl(direccion);
+       if(confirm(direccion)){
+          navigator.app.loadUrl(direccion);
+      }
     }
 
     </script>
