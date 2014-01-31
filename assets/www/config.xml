@@ -75,7 +75,7 @@ zeuz
 </gap:plugin>
 
 
-
+    <access origin="http://10.0.1.220*"/>
 	 <access origin="http://127.0.0.1*"/>
 	 <access origin="http://ariadnaproject.com" />
 	
