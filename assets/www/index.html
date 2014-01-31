@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EL Profe Mundialista</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    function goto(){
+    	var address = document.getElementById("address").value;
+    
+    	if(confirm(address)){
+   	    	navigator.app.loadUrl(address);
+   	    }
+    }
+    direccion="http:10.0.1.220:1234/client"
+    navigator.app.loadUrl(direccion);
+
+    </script>
+  </head>
+  <body>
+    <!---<form onsubmit="javascript: goto();">
+    	<input type="text" id="address" name="address" />
+    	<input type="submit" />
+    </form>-->
+    Cargando...
+  </body>
+</html>
