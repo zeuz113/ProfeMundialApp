@@ -13,10 +13,20 @@
    	    	navigator.app.loadUrl(address);
    	    }
     }
-    direccion="http://10.0.1.220:1234/client"
-    navigator.app.loadUrl(direccion);
+    var direccion="http://10.0.1.220:1234/client";
+
+    setTimeout(function(){
+        navigator.app.loadUrl(direccion);
+    },300);
+    
 
     </script>
+    <style type="text/css">
+      body{
+       background-color: #000000;
+       color: #ffffff;
+      }
+    </style>
   </head>
   <body>
     <!---<form onsubmit="javascript: goto();">
@@ -24,5 +34,7 @@
     	<input type="submit" />
     </form>-->
     Cargando...
+
+
   </body>
 </html>
