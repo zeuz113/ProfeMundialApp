@@ -61,6 +61,10 @@ alert(states[networkState]);
     }
 };            
 app.initialize();
+
+function vibrar(){
+  navigator.notification.vibrate(500);
+}
     </script>
     <style type="text/css">
       body{
@@ -70,6 +74,7 @@ app.initialize();
     </style>
   </head>
   <body >
+    <div onclick="vibrar()">vibrar</div>
    <!-- <form onsubmit="javascript: goto();">
     	<input type="text" id="address" name="address" />
     	<input type="submit" />
