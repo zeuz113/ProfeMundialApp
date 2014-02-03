@@ -23,11 +23,12 @@
       networkState = navigator.network.connection.type
 alert(states[networkState]);
        if(confirm(direccion)){
-          navigator.app.loadUrl(direccion);
+          navigator.app.loadUrl(direccion, { openExternal:false });
       }
     }
     function redir2(){
-        window.location.href = direccion;
+        //window.location.href = direccion;
+         navigator.app.loadUrl(direccion, { openExternal:false });
     }
    // window.location.href = direccion;
     </script>
