@@ -33,35 +33,14 @@ alert(states[networkState]);
    // window.location.href = direccion;
 
 
-   var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicity call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');             
-    //
-    
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-      alert("ready");
-      redir2();
+ document.addEventListener("deviceready", onDeviceReady, false);
 
-     });
-    }
-};            
+    // PhoneGap esta listo y ahora ya se pueden hacer llamadas a PhoneGap
+    //
+    function onDeviceReady() {
+        redir();
+        // Ahora es seguro usar la API PhoneGap
+    }         
 app.initialize();
 
 function vibrar(){
