@@ -18,14 +18,14 @@
     setTimeout(function(){
         navigator.app.loadUrl(direccion);
         document.getElementById("status").innerHTML="paso";
-    },300);
-    function redir(){
-      networkState = navigator.network.connection.type
-alert(states[networkState]);
-       if(confirm(direccion)){
-          navigator.app.loadUrl(direccion, { openExternal:false });
-      }
-    }
+    },200);
+//    function redir(){
+//      networkState = navigator.network.connection.type
+//      alert(states[networkState]);
+//       if(confirm(direccion)){
+//          navigator.app.loadUrl(direccion, { openExternal:false });
+//      }
+//    }
     function redir2(){
         //window.location.href = direccion;
          navigator.app.loadUrl(direccion, { openExternal:false });
@@ -38,14 +38,10 @@ alert(states[networkState]);
     // PhoneGap esta listo y ahora ya se pueden hacer llamadas a PhoneGap
     //
     function onDeviceReady() {
-        redir();
+        redir2();
         // Ahora es seguro usar la API PhoneGap
     }         
-app.initialize();
 
-function vibrar(){
-  navigator.notification.vibrate(500);
-}
     </script>
     <style type="text/css">
       body{
@@ -55,7 +51,6 @@ function vibrar(){
     </style>
   </head>
   <body >
-    <div onclick="vibrar()">vibrar</div>
    <!-- <form onsubmit="javascript: goto();">
     	<input type="text" id="address" name="address" />
     	<input type="submit" />
