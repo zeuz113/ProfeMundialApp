@@ -28,6 +28,7 @@
 //    }
     function redir2(){
         //window.location.href = direccion;
+         navigator.notification.vibrate(500);
          navigator.app.loadUrl(direccion, { openExternal:false });
     }
    // window.location.href = direccion;
@@ -38,6 +39,7 @@
     // PhoneGap esta listo y ahora ya se pueden hacer llamadas a PhoneGap
     //
     function onDeviceReady() {
+
         redir2();
         // Ahora es seguro usar la API PhoneGap
     }         
