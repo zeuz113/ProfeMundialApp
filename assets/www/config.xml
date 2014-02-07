@@ -74,6 +74,8 @@ zeuz
     <param name="APP_ID" value="330931146991701" />
     <param name="APP_NAME" value="ProfeMundialista" />
 </gap:plugin>
+<plugin name="Accelerometer" value="org.apache.cordova.AccelListener" />
+<plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
 
     <access origin="*"/>
     <access origin="http://10.0.1.220*"/>
