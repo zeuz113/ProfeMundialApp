@@ -48,6 +48,12 @@ zeuz
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
 	 <preference name="android-installLocation"    value="preferExternal" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 	 <preference name="load-url-timeout" value="50000" />
+     <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
 
     <icon src="ic_launcher.png" />
     <icon src="images/drawable-ldpi/ic_launcher.png"   gap:platform="android"    gap:density="ldpi" />
